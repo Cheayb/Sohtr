@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STRIDE | متجر الأحذية العصرية</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- الشريط العلوي -->
+  <header class="navbar">
+    <div class="logo">STRIDE<span>.MA</span></div>
+    <button class="cart-btn" id="openCart">
+      السلة (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <!-- الواجهة الرئيسية -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>خطوات واثقة بأناقة يومية</h1>
+      <p>تشكيلة مختارة من الأحذية الرياضية والكلاسيكية بجودة عالية وتوصيل لجميع المدن.</p>
+      <a href="#products" class="btn-primary">تصفح التشكيلة</a>
+    </div>
+  </section>
+
+  <!-- أزرار التصفية -->
+  <section class="container" id="products">
+    <div class="section-header">
+      <h2>أحدث الموديلات</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-category="all">الكل</button>
+        <button class="filter-btn" data-category="sport">رياضي</button>
+        <button class="filter-btn" data-category="casual">كاجوال</button>
+        <button class="filter-btn" data-category="classic">كلاسيك</button>
+      </div>
+    </div>
+
+    <!-- شبكة المنتجات -->
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <!-- نافذة السلة الجانبية -->
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h3>سلة المشتريات</h3>
+        <button id="closeCart">&times;</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="total">المجموع: <span id="cartTotal">0</span> درهم</div>
+        <input type="text" id="customerName" placeholder="الاسم الكامل">
+        <input type="text" id="customerCity" placeholder="المدينة والعنوان">
+        <button class="btn-whatsapp" id="checkoutBtn">تأكيد الطلب عبر واتساب</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- التذييل -->
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2026 STRIDE Store</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
