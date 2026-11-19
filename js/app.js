@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "212600000000";
+const WHATSAPP_NUMBER = "212711671334";
 
 const products = [
   {
